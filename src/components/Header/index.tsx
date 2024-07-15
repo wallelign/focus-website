@@ -56,6 +56,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
+                {/* <h5>Focus</h5> */}
                 <Image
                   src="/images/logo/logo-2.svg"
                   alt="logo"
