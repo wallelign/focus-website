@@ -3,50 +3,48 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
+import AboutUsImage from "../../../public/images/about/imageTwo.jpg"
 import ModalVideo from "react-modal-video";
+import { FaCircleArrowRight } from "react-icons/fa6";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="ABOUT US"
+          paragraph="Trusted Remote Project Implementation Team dedicated to executing diverse projects with precision and expertise. Our commitment to excellence ensures seamless implementation, tailored to exceed customer expectations."
           center
           mb="80px"
         />
 
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div
-              className="mx-auto max-w-[770px] overflow-hidden rounded-md"
-              data-wow-delay=".15s"
-            >
-              <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
-                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
-                  <button
-                    aria-label="video play button"
-                    onClick={() => setOpen(true)}
-                    className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
-                  >
-                    <svg
-                      width="16"
-                      height="18"
-                      viewBox="0 0 16 18"
-                      className="fill-current"
-                    >
-                      <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
-                    </svg>
-                  </button>
+       <div className="  flex ">
+            <div className=" ml-24 pt-8 ">
+                <div className="flex w-96">
+                <FaCircleArrowRight/>
+                <span className=" text-base font-bold"> Professional Staff one</span>
                 </div>
+                <div className=" mt-8  w-96 flex">
+                <FaCircleArrowRight/>
+                   <span className=""> Professional Staff two</span>
+                </div>
+           </div>
+           <div className=" -ml-20 pt-8" >
+             <div className=" flex w-72">
+             <FaCircleArrowRight/>
+             <span className=""> Professional Staff three</span>
+             </div>
+              <div className=" flex mt-8">
+              <FaCircleArrowRight/>
+                <span className=" "> Professional Staff four</span>
               </div>
-            </div>
+           </div>
+        <div className=" -mt-22">
+         <Image src={AboutUsImage} width={600} height={600} alt="no_image"/>
           </div>
-        </div>
+       </div>
       </div>
 
       <ModalVideo
