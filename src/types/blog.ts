@@ -13,3 +13,9 @@ export type Blog = {
   tags: string[];
   publishDate: string;
 };
+export type Team = {
+  id: number;
+  name:string,
+  title: string;
+  image: string;
+};

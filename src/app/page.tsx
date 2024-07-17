@@ -1,6 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
+import Blog from "@/components/team";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -10,7 +10,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import About_us from "@/components/Video";
 import { Metadata } from "next";
-
+import Team from "@/components/team"
 export const metadata: Metadata = {
   title: "Focus-Remote team",
   description: "Accept project from the company and implement it efficiently ",
@@ -24,12 +24,13 @@ export default function Home() {
       <Hero />
       <About_us />
       <Features />
-      <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <Brands /> */}
+      {/* <AboutSectionOne />
+      <AboutSectionTwo /> */}
       <Testimonials />
-      <Pricing />
-      <Blog />
+      {/* <Pricing /> */}
+      {/* <Blog /> */}
+      <Team/>
       <Contact />
     </>
   );

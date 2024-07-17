@@ -6,6 +6,7 @@ import SectionTitle from "../Common/SectionTitle";
 import AboutUsImage from "../../../public/images/about/imageTwo.jpg"
 import ModalVideo from "react-modal-video";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { IoCall } from "react-icons/io5";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
@@ -23,28 +24,33 @@ const Video = () => {
        <div className="  flex ">
             <div className=" ml-24 pt-8 ">
                 <div className="flex w-96">
-                <FaCircleArrowRight/>
-                <span className=" text-base font-bold"> Professional Staff one</span>
+                  <FaCircleArrowRight />
+                  <span className=" text-xl text-gray-700 pl-4 -mt-2 "> Professional Staff</span>
                 </div>
                 <div className=" mt-8  w-96 flex">
-                <FaCircleArrowRight/>
-                   <span className=""> Professional Staff two</span>
+                  <FaCircleArrowRight />
+                    <span className="text-xl text-gray-700 pl-4 -mt-2 "> 24/7 Support</span>
                 </div>
            </div>
            <div className=" -ml-20 pt-8" >
-             <div className=" flex w-72">
-             <FaCircleArrowRight/>
-             <span className=""> Professional Staff three</span>
+             <div className=" flex w-40">
+              <FaCircleArrowRight />
+              <span className=" text-xl text-gray-700 pl-4 -mt-2 "> Fair Prices </span>
              </div>
               <div className=" flex mt-8">
-              <FaCircleArrowRight/>
-                <span className=" "> Professional Staff four</span>
+                <FaCircleArrowRight />
+                  <span className="text-xl text-gray-700 pl-4 -mt-2  "> Quality Code</span>
               </div>
            </div>
-        <div className=" -mt-22">
-         <Image src={AboutUsImage} width={600} height={600} alt="no_image"/>
+        <div className="-mt-22">
+         <Image src={AboutUsImage} width={500} height={400} alt="no_image"/>
           </div>
        </div>
+       <div className=" grid grid-cols-2  ml-24" style={{marginTop:"-330px", marginBottom:"400px"}}>
+         <IoCall className=" w-8 h-8 "/>
+        <h4 className=" text-xl  text-blue-400 " style={{marginLeft:"-480px"}}>Call to ask any question</h4>
+        <span className=" mx-14 pt-1 text-xl text-gray-900"> +251 961197371</span>
+        </div>
       </div>
 
       <ModalVideo
