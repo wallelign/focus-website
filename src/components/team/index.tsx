@@ -1,6 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
-import blogData from "./blogData";
+import teamData from "./teamData";
 
 const Blog = () => {
   return (
@@ -10,15 +10,15 @@ const Blog = () => {
     >
       <div className="container">
         <SectionTitle
-          title="Our Latest Blogs"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Our Team"
+          paragraph="Meet our expert remote team, dedicated to delivering exceptional results. We ensure your projects are handled with precision, creativity, and efficiency, providing seamless implementation and outstanding support"
           center
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
-          {blogData.map((blog) => (
+          {teamData.map((blog) => (
             <div key={blog.id} className="w-full">
-              <SingleBlog blog={blog} />
+              <SingleBlog team={blog} />
             </div>
           ))}
         </div>
